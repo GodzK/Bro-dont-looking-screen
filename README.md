@@ -1,5 +1,5 @@
 
-# Language Fixer (English to Thai Keyboard Converter)
+# Language Fixer (Eng & Thai)
 
 ## ความเป็นมา
 
