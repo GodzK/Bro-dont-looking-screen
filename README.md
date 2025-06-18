@@ -1,5 +1,5 @@
 
-# Language Fixer (English to Thai Keyboard Converter)
+# Language Fixer (Eng & Thai)
 
 ## ความเป็นมา
 
@@ -34,22 +34,6 @@
 
 3. ดาวน์โหลดไฟล์โปรเจกต์ทั้งหมด รวมถึง `icon.ico` ไอคอนโปรแกรม
 
-
-
----
-
-## วิธี Build เป็นไฟล์ .exe
-
-1. รันคำสั่งต่อไปนี้ในโฟลเดอร์โปรเจกต์
-
-   ```bash
-   pyinstaller --onefile --windowed --icon=icon.ico language_fixer.py
-   ```
-
-2. รอจนเสร็จ แล้วไฟล์ `language_fixer.exe` จะอยู่ในโฟลเดอร์ `dist`
-
-3. นำไฟล์ `.exe` ไปใช้งานหรือแจกจ่ายได้เลย โดยไม่ต้องติดตั้ง Python
-
 ---
 
 ## วิธีใช้งาน
@@ -64,6 +48,30 @@
 4. ใส่ข้อความภาษาอังกฤษที่พิมพ์ผิด (เหมือนพิมพ์โดยไม่ได้เปลี่ยนภาษา)
 
 5. กดปุ่ม **Translate** เพื่อดูข้อความแปลงเป็นภาษาไทยทีละตัว
+
+----
+## วิธีตั้งโปรแกรมให้รันอัตโนมัติเมื่อเปิดเครื่อง Windows
+1. ไปที่ไฟล์ .exe ของคุณ
+เปิดโฟลเดอร์ที่เก็บไฟล์ .exe เช่น C:\MyApp\MyProgram.exe
+คลิกขวาที่ไฟล์ .exe
+เลือก Create shortcut (สร้างทางลัด)
+จะได้ไฟล์ใหม่ชื่อประมาณว่า language_fixer - Shortcut
+2. กด Win + R พิมพ์ %APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup แล้ว Enter
+3. จะเปิดโฟลเดอร์ Startup ขึ้นมา
+4. ลาก shortcut ของไฟล์ .exe ของคุณมาใส่ในโฟลเดอร์Startup
+----
+
+## วิธี Build เป็นไฟล์ .exe
+
+1. รันคำสั่งต่อไปนี้ในโฟลเดอร์โปรเจกต์
+
+   ```bash
+   pyinstaller --onefile --windowed --icon=icon.ico language_fixer.py
+   ```
+
+2. รอจนเสร็จ แล้วไฟล์ `language_fixer.exe` จะอยู่ในโฟลเดอร์ `dist`
+
+3. นำไฟล์ `.exe` ไปใช้งานหรือแจกจ่ายได้เลย โดยไม่ต้องติดตั้ง Python
 
 ---
 
